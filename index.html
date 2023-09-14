@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Labrada:ital@1&family=Poppins:wght@200&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Labrada:ital@1&family=Poppins:wght@400&display=swap" rel="stylesheet">
+  </head>
 <body>
     <div class="container">
         <header>
@@ -22,7 +22,8 @@
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contactme">Contact</a></li>
                     <li><a href="https://drive.google.com/file/d/1xG3wOVG0sc9WCMZ4w1j1NJibLVgM7tIU/view?usp=sharing">Resume</a></li>
-                </ul>  
+                    <li><a href="https://medium.com/me/stories/public">Blog</a></li>
+                  </ul>  
             </div>   
         </header>
         <div id="home">
@@ -42,8 +43,8 @@
           </div>
         </div>
        
-        <h2>About Me</h2>
-        <div id="about">
+        <h2 id="about">About Me</h2>
+        <div class="about">
             <div class="story">
                 <p>Coming from a tech background where you are constantly reminded that women cannot write code, breaking such barriers was my major inspiration to start this journey to teach myself how to program.</p>
                    <p>With continous life long learning, i am proud to call myself a self taught full stack web programmer with a passion for Javascript and everything web related.</p>
@@ -110,12 +111,12 @@
             </div>
         </div>
         
-        <h2>My Projects </h2>
-        <div id="projects">
+        <h2 id="projects">My Projects </h2>
+        <div class="projects">
             <div class="cv">
                 <div class="desc">
-                  <h3 class="h3">Cv Builder</h3>
-                    <p>This a cv builder application. It was created using React, Vanilla JavaScript</p>
+                  <h3 class="project-title">Cv Builder</h3>
+                    <p>This is a cv builder application. It generates the CV based on the data entered by the user. It was created using React, Vanilla JavaScript</p>
                     <button class="btn-theme">
                       <a href="https://lizahumuza.github.io/cv-creator/">Live Link</a>
                     </button>
@@ -126,24 +127,24 @@
                 </div>
             </div>
             <div class="cv">
-              <div class="image cv-img">
-                <img class="image" src="./assets/weather.png" alt="">
-              </div>
               <div class="desc">
-                <h3 class="h3">Weather Appllication</h3>
-                  <p>This a weather application. It was created using JavaScript, Html, CSS, OpenWeatherMap API, Jest, Webpack</p>
+                <h3 class="project-title">Weather Application</h3>
+                  <p>This is a weather application. This app shows the current weather of a city. It uses OpenWeatherMap API to fetch the weather data. It can also show weather based on the user's current location using Geolocation API. It was created using JavaScript, Html, CSS, OpenWeatherMap API, Jest, Webpack</p>
                   <button class="btn-theme">
-                    <a href="lizahumuza.github.io/weatherApp/">Live Link</a>
+                    <a href="https://lizahumuza.github.io/weatherApp/">Live Link</a>
                   </button>
                   <button class="btn-inv"><a href="https://github.com/lizahumuza/weatherApp">Code Link</a></button>
+              </div>
+              <div class="image">
+                <img class="image" src="./assets/weather.png" alt="">
               </div>
             </div>
             <div class="cv">
               <div class="desc">
-                <h3>Library Application</h3>
-                  <p>This a library application. It was created using JavaScript, Firebase, Html, CSS </p>
+                <h3 class="project-title">Library Application</h3>
+                  <p>This is a library application. It allows a user to enter book details of their choice, and also to specify whether it has been read or not. The user also has the ability to delete the book from the library. It was created using JavaScript, Firebase, Html, CSS </p>
                   <button class="btn-theme">
-                    <a href="lizahumuza.github.io/library/">Live Link</a>
+                    <a href="https://lizahumuza.github.io/library/">Live Link</a>
                   </button>
                   <button class="btn-inv"><a href="https://github.com/lizahumuza/library">Code Link</a></button>
               </div>
@@ -152,22 +153,39 @@
               </div>
             </div>
             <div class="cv">
-              <div class="image cv-img">
-                <img class="image" src="./assets/dashboard.png" alt="">
-              </div>
-              
               <div class="desc">
-                <h3>Dashboard Mockup</h3>
-                  <p>This a dashbord Mockup. It was created using Html and css</p>
+                <h3 class="project-title">Rock, Paper & Scissors</h3>
+                  <p>This is a Rock, Paper and Scissors game App. It is a game usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched hand. It was created using JavaScript, Html and CSS </p>
                   <button class="btn-theme">
-                    <a href="lizahumuza.github.io/dashboard/">Live Link</a>
+                    <a href="https://lizahumuza.github.io/rock-paper-scissors-JS/">Live Link</a>
+                  </button>
+                  <button class="btn-inv"><a href="https://github.com/lizahumuza/rock-paper-scissors-JS">Code Link</a></button>
+              </div>
+              <div class="image">
+                <img class="image" src="./assets/rock.png" alt="">
+              </div>
+            </div>
+            <div class="cv"> 
+              <div class="desc">
+                <h3 class="project-title">Dashboard Mockup</h3>
+                  <p>This is a dashbord Mockup. Its focus is on grid properties and how they can be used to create responsive layouts. It was created using Html and css</p>
+                  <button class="btn-theme">
+                    <a href="https://lizahumuza.github.io/dashboard/">Live Link</a>
                   </button>
                   <button class="btn-inv"><a href="https://github.com/lizahumuza/dashboard">Code Link</a></button>
               </div>
+              <div class="image">
+                <img class="image" src="./assets/dashboard.png" alt="">
+              </div>
+            </div>
+            <div>
+              <button class="button1">
+                <a href="https://github.com/lizahumuza?tab=repositories">See All</a>
+              </button>
             </div>
         </div>
-        <h2>Contact Me</h2>
-        <div id="contactme">
+        <h2 id="contactme">Contact Me</h2>
+        <div class="contactme">
             <div class="msg">
               <p>Leave me a message if you would like to work with me or have any opportunities to discuss.</p>
              <div class="social-icons">
@@ -219,5 +237,6 @@
           </div>   
         </footer>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>

@@ -8,7 +8,10 @@ body,html{
 
 }
 header{
-  position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
     font-size: 1.3rem;
@@ -43,6 +46,8 @@ h3{
 .logo-img{
   max-width: 80px;
   max-height: 80px;
+  margin-left: 45px;
+  margin-top: 10px;
 }
 .abt-img{
   max-width: 500px;
@@ -92,7 +97,7 @@ h3{
 .text{
   margin-left: 10px;
 }
-#about{
+.about{
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -101,9 +106,9 @@ h3{
   
     
 }
-.moving-text {
+/*.moving-text {
   /*position: absolute;*/
-  top: -50px;
+  /*top: -50px;
   animation: falling-text 5s ease-in-out ;
   }
   @keyframes falling-text {
@@ -116,7 +121,34 @@ h3{
     100% {
       transform: translateY(0);
     }
+  }*/
+  .moving-text:nth-child(1) {
+    animation: falling-text 5s ease-in-out 0s;
   }
+  
+  .moving-text:nth-child(2) {
+    animation: falling-text 5s ease-in-out 7s;
+  }
+  
+  .moving-text:nth-child(3) {
+    animation: falling-text 5s ease-in-out 14s;
+  }
+  
+  @keyframes falling-text {
+    0% {
+      transform: translateY(-60px);
+      opacity: 0;
+    }
+    50% {
+      transform: translateY(40px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+  }
+ 
 li{
  margin-right: 30px;
 }
@@ -165,6 +197,7 @@ a:active{
   }
 .cv{
   display: flex;
+  margin-bottom: 6rem;
 }
 #form {
   flex: 1;
@@ -224,7 +257,7 @@ footer{
   flex: 1;
 
 }
-#projects{
+.projects{
   font-size: 1.2rem;
   margin: 25px;
 }
@@ -235,17 +268,16 @@ footer{
   padding: 10px;
 }
 .desc{
-flex: 1;
 padding: 15px;
 }
 .image{
-  flex: 1;
   height: 260px;
-  width: 640px;
-
+  width: 450px;
 }
-.cv-img{
-  margin-right: 20px;
+.project-title{
+  font-size: 1.7rem;
+  font-weight: bolder;
+  color: black;
 }
 .btn-theme {
   background: #fff;
@@ -260,7 +292,6 @@ padding: 15px;
 }
 
 .btn-inv {
-  color: ;
   background:#9fc0f5 ;
   box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
   width: 100px;
@@ -275,11 +306,26 @@ padding: 15px;
   font-size: 1.6rem;
   border: none;
 }
-#contactme{
+.button1{
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  background: #fff;
+  color:#008CBA;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 15%);
+  width: 100px;
+  height: 30px;
+  border: solid #008CBA;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  margin-bottom: 4rem;
+}
+.contactme{
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 25px;
+  margin-bottom: 8rem;
 }
 .msg{
   flex: 1;
@@ -302,7 +348,7 @@ padding: 15px;
 
 .social-icons > div {
   display: flex;
-  align-items: center; /* Align items horizontally within each row */
+  align-items: center; 
 }
 
 .icon, .devicon-github-original{
